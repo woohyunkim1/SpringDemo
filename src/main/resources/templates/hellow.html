@@ -1,0 +1,15 @@
+<html xmlns:th="www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <th:block th:each="data:${imageList}">
+        <span th:text="${data.image_name}"></span>
+    </th:block>
+</div>
+
+</body>
+</html>

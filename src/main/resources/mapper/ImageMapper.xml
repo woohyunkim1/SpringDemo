@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.ImageMapper">
+
+    <select id="selectImageList" resultType="com.example.demo.model.ImageVO">
+        select image_id, image_base64, image_name
+        from postgres.public.image_storage
+    </select>
+
+</mapper>
